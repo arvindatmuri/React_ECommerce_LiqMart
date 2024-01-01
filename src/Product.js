@@ -1,17 +1,21 @@
 import React from "react";
 import './Product.css';
 
-function Product() {
+function Product(props) {
     return ( 
     <div>
         <div className="product">
             <div className="product_info">
-                <p>PepperJack Barossa Shiraz</p>
-                <p className="price">$43.99</p>
-                <div className="product_rating"> &#9733; &#9733; &#9733; &#9733;</div>
+                <span className="title">{props.title}</span>
+                <span className="subtitle">{props.subtitle}</span>
+                <span className="quantity">{props.quantity}</span>
+                <div className="product_rating">{Array(props.rating).fill().map((_,i)=>(<p>&#9733; </p>))}</div>
+                <br/>
+                <span className="price">${props.price}</span>
+                
             </div>
-            <img src="https://media.danmurphys.com.au/dmo/product/144469-1.png?impolicy=PROD_SM" alt="" />
-
+            <img src={props.image} alt="" />
+            <button>Add to Basket</button>
 
         </div>
     </div> 
