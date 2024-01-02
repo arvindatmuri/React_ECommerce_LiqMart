@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from './Product';
-import './Home.css';
+import '../styles/Home.css';
 
 function Home() {
     return (
@@ -33,7 +33,7 @@ function Home() {
                     id="1122335"
                     title="Jim Beam"
                     subtitle="Bourbon Whiskey"
-                    price={49.50}
+                    price="49.50"
                     rating={5}
                     quantity="1L"
                     image="https://media.danmurphys.com.au/dmo/product/335009-1.png?impolicy=PROD_MD" />
@@ -103,12 +103,21 @@ function Home() {
 
                     <Product 
                     id="1122353"
-                    title="Great Northern Brewing Co."
+                    title="Great Northern"
                     subtitle="Super Crisp Lager Bottles"
                     quantity="330mL (24 Pack)"
                     price={45.95}
                     rating={5}
                     image="https://media.danmurphys.com.au/dmo/product/839496-1.png?impolicy=PROD_MD" />
+
+                    <Product 
+                    id="1122354"
+                    title="Better Beer"
+                    subtitle="Zero Carb Lager Cans"
+                    quantity="355mL (24 Pack)"
+                    price={55}
+                    rating={5}
+                    image="https://media.danmurphys.com.au/dmo/product/182464-1.png?impolicy=PROD_MD" />
                     
                 </div>
                 <h1 className='heading_1'>Party Hard?</h1>

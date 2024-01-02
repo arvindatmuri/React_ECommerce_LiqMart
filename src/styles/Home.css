@@ -5,10 +5,11 @@
     margin-right: auto;
     max-width: 1500px;
 }
+
 .home_pg_img {
     width: 100%;
     max-width: 1000px;
-    height: 600px;
+    height: 500px;
     z-index: -1;
     margin-bottom: 20px;
     padding: 20px;

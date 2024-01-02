@@ -2,7 +2,8 @@ import React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LiquorRoundedIcon from '@mui/icons-material/LiquorRounded';
 import SearchIcon from '@mui/icons-material/Search';
-import './Header.css';
+import '../styles/Header.css';
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -20,10 +21,14 @@ function Header() {
             <span className="nav_item_lone">Hi Guest</span>
             <span className="nav_item_ltwo">Sign In</span>
         </div>
-        <div className="nav_item_cart">
-            <ShoppingCartIcon className='item_cart' fontSize='large'/>
-            <span className="nav_item_count">0</span>
-        </div>
+
+        <Link to="/checkout" style={{textDecoration:"none"}}>
+            <div className="nav_item_cart">
+                <ShoppingCartIcon className='item_cart' fontSize='large'/>
+                <span className="nav_item_count">0</span>
+            </div>
+        </Link>
+
         <div className="nav_item_last">
             <span className="nav_item_lone">Your</span>
             <span className="nav_item_ltwo">Shop</span>
