@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
     <div className="header">
-        <div className="header_nav_logo">
-            <LiquorRoundedIcon className='nav_logo' fontSize='large'/>
-            <h2 className='header_title'>LiqMart</h2>
-        </div>
+        <Link to="/">
+            <div className="header_nav_logo">
+                <LiquorRoundedIcon className='nav_logo' fontSize='large'/>
+                <h2 className='header_title'>LiqMart</h2>
+            </div>
+        </Link>
         <div className="header_searchbar">
             <input type='text' className='search_input'/>
             <SearchIcon className='search_icon' fontSize='large'/>
